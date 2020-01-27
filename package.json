@@ -1,0 +1,28 @@
+{
+  "name": "hello-electron",
+  "version": "1.0.0",
+  "description": "Hello work my Electron app",
+  "build": {
+    "productName": "Hello Electron",
+    "appId": "pichid.electron.hello",
+    "win": {
+      "target": [
+        "nsis",
+        "msi"
+      ],
+      "icon": "public/icons/256x256.png"
+    }
+  },
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Pichid Detson",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.10",
+    "electron-builder": "^22.3.2"
+  }
+}
